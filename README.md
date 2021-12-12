@@ -3,7 +3,7 @@ Possible fix for 0x80565323 error and FSCTL_DEDUP_FILE.DEDUP_SET_CHUNK_STORE_CAC
 
 Found sometimes deduplication getting broken on Windows. In example BSOD or sudden reboot while working on jobs (scrubbing and etc):
 1. DataAccess sets false (disabled).
-2. Trying to enable it with Enable-DedupVolume <Letter>: -DataAccess throws error: 0x80565368
+2. Trying to enable it with Enable-DedupVolume \<Letter\>: -DataAccess throws error: 0x80565368
 3. fltmc instances shows there is no Dedup filter for required volume
 4. Reinstalling Dedup don't help
 5. Cannot unoptimize volume it cannot enable DataAccess.
