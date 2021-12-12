@@ -13,7 +13,7 @@ Investigated and found solution:
 2. Backup HSM*.cfg files (possibly VolumeJobLock.bin too)
 3. Remove them.
 4. Reboot computer.
-~~5. Check if Disable-DedupVolume -DataAccess and then Enable-DedupVolume -DataAccess works fine.~~
+5. ~~Check if Disable-DedupVolume -DataAccess and then Enable-DedupVolume -DataAccess works fine.~~
 5. Don't use "-DataAccess" parameter. It's buggy for me. Remove HSM*.cfg files. Enable dataaccess. Remove file them again. And forget about it.
 I've found that disabling dataaccess, enabling again, disabling and enabling again breaks dat shit again.
 It's like normal CFG file size: 77 bytes. Broken CFG file size: 120+ bytes.
