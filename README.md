@@ -10,10 +10,12 @@ Found sometimes deduplication getting broken on Windows. In example BSOD or sudd
   
 Investigated and found solution:
 1. Get access to "System Volume information\Dedup\Settings".
-2. Backup HSM*.cfg files
+2. Backup HSM*.cfg files (possibly VolumeJobLock.bin too)
 3. Remove them.
 4. Reboot computer.
 5. Check if Disable-DedupVolume -DataAccess and then Enable-DedupVolume -DataAccess works fine.
+6. Check logs for permission errors.
+7. Launch some jobs (optimization, garbagecollection, scrubbing) and check logs again.
    
 ![This is an image](https://i.imgur.com/7kKpoZb.png)
 
