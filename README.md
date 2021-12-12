@@ -14,8 +14,10 @@ Investigated and found solution:
 3. Remove them.
 4. Reboot computer.
 5. Check if Disable-DedupVolume -DataAccess and then Enable-DedupVolume -DataAccess works fine.
-  
-https://i.imgur.com/7kKpoZb.png
+   
+![This is an image](https://i.imgur.com/7kKpoZb.png)
+
+If you don't reboot your machine and try to enable data access, deduplication will be broken again after next reboot.
   
 Some links over internet with no solution with similar problem:
 https://docs.microsoft.com/en-us/answers/questions/284192/deduplication-fails-on-general-use-file-server-wit.html
